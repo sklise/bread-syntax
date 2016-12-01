@@ -63,7 +63,13 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .comment {
-  color: @light-gray;
+  color: @very-light-gray;
+}
+
+.comment.block,
+.comment.line {
+  background: solid;
+  background-color: fadeout(@light-blue, 60%);
 }
 
 .keyword {
@@ -148,6 +154,7 @@ atom-text-editor .search-results .marker.current-result .region,
   &.definition {
     &.comment {
       color: @light-gray;
+      background: transparent;
     }
 
     &.string,
